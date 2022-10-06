@@ -2,21 +2,32 @@
 optimizer_runs = 1000000
 
 [rpc_endpoints]
-arbitrum = "${RPC_URL_ARBITRUM}"
-avalanche = "${RPC_URL_AVALANCHE}"
-fantom = "${RPC_URL_FANTOM}"
-goerli = "${RPC_URL_GOERLI}"
 mainnet = "${RPC_URL_MAINNET}"
-optimism = "${RPC_URL_OPTIMISM}"
 polygon = "${RPC_URL_POLYGON}"
+bsc = "${RPC_URL_BSC}"
+gnosis = "${RPC_URL_GNOSIS}"
+fantom = "${RPC_URL_FANTOM}"
+okx = "${RPC_URL_OKX}"
+avalanche = "${RPC_URL_AVALANCHE}"
+arbitrum = "${RPC_URL_ARBITRUM}"
+optimism = "${RPC_URL_OPTIMISM}"
+moonriver = "${RPC_URL_MOONRIVER}"
+moonbeam = "${RPC_URL_MOONBEAM}"
+celo = "${RPC_URL_CELO}"
+fuse = "${RPC_URL_FUSE}"
+cronos = "${RPC_URL_CRONOS}"
+velas = "${RPC_URL_VELAS}"
 
 [etherscan]
-arbitrum = {key = "${ARBISCAN_KEY}", url = "https://api.arbiscan.io/api"}
-avalanche = {key = "${SNOWTRACE_KEY}", url = "https://api.snowtrace.io/api"}
-fantom = {key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api"}
-goerli = {key = "${ETHERSCAN_KEY}", url = "https://api-goerli.etherscan.io/api"}
 mainnet = {key = "${ETHERSCAN_KEY}"}
-optimism = {key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.etherscan.io/api"}
 polygon = {key = "${POLYGONSCAN_KEY}", url = "https://api.polygonscan.com/api"}
+bsc = {key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api"}
+gnosis = {key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/api"}
+fantom = {key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api"}
+avalanche = {key = "${SNOWTRACE_KEY}", url = "https://api.snowtrace.io/api"}
+arbitrum = {key = "${ARBISCAN_KEY}", url = "https://api.arbiscan.io/api"}
+optimism = {key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.etherscan.io/api"}
+moonriver = {key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.moonscan.io/api"}
+moonbeam = {key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api"}
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

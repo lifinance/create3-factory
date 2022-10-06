@@ -1,7 +1,9 @@
+#!/bin/bash
+
 deploy() {
 	NETWORK=$1
 
-	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --silent --broadcast --verify --skip-simulation)
+	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --silent --broadcast --verify --skip-simulation --legacy)
 	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2> /dev/null)
 
 	factory=$(echo $RETURN_DATA | jq -r '.factory.value')
