@@ -2,6 +2,10 @@
 
 Factory contract for easily deploying contracts to the same address on multiple chains, using CREATE3.
 
+This was forked from https://github.com/zeframlou/create3-factory
+
+The deploy script was updated to use legacy (non EIP-1559) transactions due to the fact that some chains that LIFI supports do not support EIP-1559.
+
 ## Why?
 
 Deploying a contract to multiple chains with the same address is annoying. One usually would create a new Ethereum account, seed it with enough tokens to pay for gas on every chain, and then deploy the contract naively. This relies on the fact that the new account's nonce is synced on all the chains, therefore resulting in the same contract address.
@@ -11,17 +15,28 @@ One could use a `CREATE2` factory that deterministically deploys contracts to an
 
 A `CREATE3` factory offers the best solution: the address of the deployed contract is determined by only the deployer address and the salt. This makes it far easier to deploy contracts to multiple chains at the same addresses.
 
+LIFI Supports a large number of chains and we are only growing. CREATE3 allows us to manage our deployments better as well as make integration by developers more painless.
+
 ## Deployments
 
-`CREATE3Factory` has been deployed to `0x9fBB3DF7C40Da2e5A0dE984fFE2CCB7C47cd0ABf` on the following networks:
+`CREATE3Factory` has been deployed to `0x93FEC2C00BfE902F733B57c5a6CeeD7CD1384AE1` on the following networks:
 
 - Ethereum Mainnet
-- Ethereum Goerli Testnet
-- Arbitrum Mainnet
-- Avalanche C-Chain Mainnet
-- Fantom Opera Mainnet
-- Optimism Mainnet
 - Polygon Mainnet
+- Binance Smart Chain Mainnet
+- Gnosis Mainnet
+- Fantom Mainnet
+- OKXChain Mainnet
+- Avalanche C-Chain Mainnet
+- Arbitrum Mainnet
+- Optimism Mainnet
+- Moonriver Mainnet
+- Moonbeam Mainnet
+- CELO Mainnet
+- FUSE Mainnet
+- CRONOS Mainnet
+- Velas Mainnet
+- **More Soon**
 
 ## Usage
 
@@ -37,7 +52,7 @@ A few notes:
 To install with [Foundry](https://github.com/foundry-rs/foundry):
 
 ```
-forge install zeframlou/create3-factory
+forge install lifinance/create3-factory
 ```
 
 ## Local development
