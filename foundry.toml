@@ -17,6 +17,10 @@ celo = "${RPC_URL_CELO}"
 fuse = "${RPC_URL_FUSE}"
 cronos = "${RPC_URL_CRONOS}"
 velas = "${RPC_URL_VELAS}"
+harmony = "${RPC_URL_HARMONY}"
+evmos = "${RPC_URL_EVMOS}"
+aurora = "${RPC_URL_AURORA}"
+boba = "${RPC_URL_BOBA}"
 
 [etherscan]
 mainnet = {key = "${ETHERSCAN_KEY}"}

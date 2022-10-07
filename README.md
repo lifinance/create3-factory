@@ -36,6 +36,10 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - FUSE Mainnet
 - CRONOS Mainnet
 - Velas Mainnet
+- Harmony Shard 0 Mainnet
+- EVMOS Mainnet
+- Aurora Mainnet
+- Boba Mainnet
 - **More Soon**
 
 ## Usage
