@@ -21,26 +21,32 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 
 `CREATE3Factory` has been deployed to `0x93FEC2C00BfE902F733B57c5a6CeeD7CD1384AE1` on the following networks:
 
-- Ethereum Mainnet
-- Polygon Mainnet
-- Binance Smart Chain Mainnet
-- Gnosis Mainnet
-- Fantom Mainnet
-- OKXChain Mainnet
-- Avalanche C-Chain Mainnet
-- Arbitrum Mainnet
-- Optimism Mainnet
-- Moonriver Mainnet
-- Moonbeam Mainnet
-- CELO Mainnet
-- FUSE Mainnet
-- CRONOS Mainnet
-- Velas Mainnet
-- Harmony Shard 0 Mainnet
-- EVMOS Mainnet
-- Aurora Mainnet
-- Boba Mainnet
-- **More Soon**
+### Mainnets
+
+- Ethereum
+- Polygon
+- Binance Smart Chain
+- Gnosis
+- Fantom
+- OKXChain
+- Avalanche C-Chain
+- Arbitrum
+- Optimism
+- Moonriver
+- Moonbeam
+- CELO
+- FUSE
+- CRONOS
+- Velas
+- Harmony Shard 0
+- EVMOS
+- Aurora
+- Boba
+
+### Testnets
+
+- Goerli
+- Sepolia
 
 ## Usage
 

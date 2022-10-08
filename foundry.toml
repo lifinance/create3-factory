@@ -22,6 +22,11 @@ evmos = "${RPC_URL_EVMOS}"
 aurora = "${RPC_URL_AURORA}"
 boba = "${RPC_URL_BOBA}"
 
+# testnets
+goerli = "${RPC_URL_GOERLI}"
+sepolia = "${RPC_URL_SEPOLIA}"
+
+
 [etherscan]
 mainnet = {key = "${ETHERSCAN_KEY}"}
 polygon = {key = "${POLYGONSCAN_KEY}", url = "https://api.polygonscan.com/api"}
@@ -34,4 +39,7 @@ optimism = {key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.eth
 moonriver = {key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.moonscan.io/api"}
 moonbeam = {key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api"}
 
+#testnets
+goerli = {key = "${ETHERSCAN_KEY}"}
+sepolia = {key = "${ETHERSCAN_KEY}"}
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
