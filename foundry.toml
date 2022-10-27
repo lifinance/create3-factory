@@ -26,6 +26,7 @@ boba = "${RPC_URL_BOBA}"
 goerli = "${RPC_URL_GOERLI}"
 sepolia = "${RPC_URL_SEPOLIA}"
 mumbai = "${RPC_URL_MUMBAI}"
+arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 
 
 [etherscan]
@@ -44,4 +45,5 @@ moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moons
 goerli = { key = "${ETHERSCAN_KEY}" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
+arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
