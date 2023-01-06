@@ -31,6 +31,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - OKXChain
 - Avalanche C-Chain
 - Arbitrum
+- Arbitrum Nova
 - Optimism
 - Moonriver
 - Moonbeam

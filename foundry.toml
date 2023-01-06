@@ -21,6 +21,7 @@ harmony = "${RPC_URL_HARMONY}"
 evmos = "${RPC_URL_EVMOS}"
 aurora = "${RPC_URL_AURORA}"
 boba = "${RPC_URL_BOBA}"
+nova = "${RPC_URL_NOVA}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -40,6 +41,7 @@ arbitrum = { key = "${ARBISCAN_KEY}", url = "https://api.arbiscan.io/api" }
 optimism = { key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.etherscan.io/api" }
 moonriver = { key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.moonscan.io/api" }
 moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api" }
+nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
