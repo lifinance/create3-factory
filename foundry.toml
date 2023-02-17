@@ -28,6 +28,7 @@ goerli = "${RPC_URL_GOERLI}"
 sepolia = "${RPC_URL_SEPOLIA}"
 mumbai = "${RPC_URL_MUMBAI}"
 arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
+consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
 
 
 [etherscan]
