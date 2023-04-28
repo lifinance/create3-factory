@@ -29,6 +29,7 @@ sepolia = "${RPC_URL_SEPOLIA}"
 mumbai = "${RPC_URL_MUMBAI}"
 arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
+scroll-alpha = "${RPC_URL_SCROLL_ALPHA}"
 
 
 [etherscan]
@@ -49,4 +50,5 @@ goerli = { key = "${ETHERSCAN_KEY}" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
 arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+scroll-alpha = { key = "no_key", url = "https://blockscout.scroll.io/api" }
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
