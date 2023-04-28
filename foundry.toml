@@ -22,6 +22,8 @@ evmos = "${RPC_URL_EVMOS}"
 aurora = "${RPC_URL_AURORA}"
 boba = "${RPC_URL_BOBA}"
 nova = "${RPC_URL_NOVA}"
+zksync = "${RPC_URL_ZKSYNC}"
+zkevm = "${RPC_URL_ZKEVM}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
