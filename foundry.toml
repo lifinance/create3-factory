@@ -29,7 +29,7 @@ sepolia = "${RPC_URL_SEPOLIA}"
 mumbai = "${RPC_URL_MUMBAI}"
 arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
-
+bsc-testnet = "${RPC_URL_BSC_TESTNET}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_KEY}" }
