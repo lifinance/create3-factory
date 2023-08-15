@@ -24,6 +24,7 @@ boba = "${RPC_URL_BOBA}"
 nova = "${RPC_URL_NOVA}"
 zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
+base = "${RPC_URL_BASE}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -46,6 +47,7 @@ optimism = { key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.et
 moonriver = { key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.moonscan.io/api" }
 moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api" }
 nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
+base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api"}
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
