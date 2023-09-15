@@ -25,6 +25,7 @@ nova = "${RPC_URL_NOVA}"
 zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
 base = "${RPC_URL_BASE}"
+linea = "${RPC_URL_LINEA}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -48,6 +49,7 @@ moonriver = { key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.mo
 moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api" }
 nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api"}
+linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api"}
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
