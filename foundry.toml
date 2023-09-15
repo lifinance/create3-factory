@@ -26,6 +26,7 @@ zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
 base = "${RPC_URL_BASE}"
 linea = "${RPC_URL_LINEA}"
+opbnb = "${RPC_URL_OPBNB}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
