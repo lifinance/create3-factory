@@ -36,6 +36,8 @@ arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
 bsc-testnet = "${RPC_URL_BSC_TESTNET}"
 scroll-alpha = "${RPC_URL_SCROLL_ALPHA}"
+zkfair-testnet = "${RPC_URL_ZKFAIR_TESTNET}"
+zkfair =  "${RPC_URL_ZKFAIR}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_KEY}" }
@@ -51,10 +53,12 @@ moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moons
 nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api"}
 linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api"}
+zkfair = { key = "${ZKFAIRSCAN_KEY}", url = "https://scan.zkfair.io/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
 arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+zkfair-testnet = { key = "${ZKFAIRSCAN_KEY}", url = "https://testnet-scan.zkfair.io/api" }
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

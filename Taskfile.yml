@@ -1,0 +1,7 @@
+# https://taskfile.dev
+version: "3"
+tasks:
+  install: forge install
+  build: forge build
+  deploy: deploy/deploy.sh zkfair-testnet
+  # cat deployments/zkfair-testnet.json
