@@ -27,6 +27,7 @@ zkevm = "${RPC_URL_ZKEVM}"
 base = "${RPC_URL_BASE}"
 linea = "${RPC_URL_LINEA}"
 opbnb = "${RPC_URL_OPBNB}"
+metis = "${RPC_URL_METIS}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -49,8 +50,9 @@ optimism = { key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.et
 moonriver = { key = "${MOONRIVER_MOONSCAN_KEY}", url = "https://api-moonriver.moonscan.io/api" }
 moonbeam = { key = "${MOONBEAM_MOONSCAN_KEY}", url = "https://api-moonbeam.moonscan.io/api" }
 nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
-base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api"}
-linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api"}
+base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
+linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api" }
+metis = { key = "${METISSCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
