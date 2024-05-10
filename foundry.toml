@@ -30,6 +30,7 @@ opbnb = "${RPC_URL_OPBNB}"
 metis = "${RPC_URL_METIS}"
 scroll = "${RPC_URL_SCROLL}"
 mode = "${RPC_URL_MODE}"
+mantle = "${RPC_URL_MANTLE}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -57,6 +58,7 @@ linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api" 
 metis = { key = "${METISSCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan" }
 scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
 mode = { key = "${MODESCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan" }
+mantle = { key = "${MANTLESCAN_API_KEY}", url = "https://api.mantlescan.xyz/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
