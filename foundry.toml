@@ -28,6 +28,7 @@ base = "${RPC_URL_BASE}"
 linea = "${RPC_URL_LINEA}"
 opbnb = "${RPC_URL_OPBNB}"
 metis = "${RPC_URL_METIS}"
+scroll = "${RPC_URL_SCROLL}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -53,6 +54,7 @@ nova = { key = "${NOVA_ARBISCAN_KEY}", url = "https://nova.arbiscan.io/api" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
 linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api" }
 metis = { key = "${METISSCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan" }
+scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
