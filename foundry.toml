@@ -31,6 +31,7 @@ metis = "${RPC_URL_METIS}"
 scroll = "${RPC_URL_SCROLL}"
 mode = "${RPC_URL_MODE}"
 mantle = "${RPC_URL_MANTLE}"
+blast = "${RPC_URL_BLAST}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -59,6 +60,7 @@ metis = { key = "${METISSCAN_API_KEY}", url = "https://api.routescan.io/v2/netwo
 scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
 mode = { key = "${MODESCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan" }
 mantle = { key = "${MANTLESCAN_API_KEY}", url = "https://api.mantlescan.xyz/api" }
+blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
@@ -66,3 +68,4 @@ sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
 arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
+#
