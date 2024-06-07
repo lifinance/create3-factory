@@ -32,6 +32,7 @@ scroll = "${RPC_URL_SCROLL}"
 mode = "${RPC_URL_MODE}"
 mantle = "${RPC_URL_MANTLE}"
 blast = "${RPC_URL_BLAST}"
+rootstock = "${RPC_URL_ROOTSTOCK}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -61,6 +62,7 @@ scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api"
 mode = { key = "${MODESCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan" }
 mantle = { key = "${MANTLESCAN_API_KEY}", url = "https://api.mantlescan.xyz/api" }
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
+rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
