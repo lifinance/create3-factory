@@ -14,6 +14,7 @@ optimism = "${RPC_URL_OPTIMISM}"
 moonriver = "${RPC_URL_MOONRIVER}"
 moonbeam = "${RPC_URL_MOONBEAM}"
 celo = "${RPC_URL_CELO}"
+fraxtal = "${RPC_URL_FRAXTAL}"
 fuse = "${RPC_URL_FUSE}"
 cronos = "${RPC_URL_CRONOS}"
 velas = "${RPC_URL_VELAS}"
@@ -65,6 +66,7 @@ mantle = { key = "${MANTLESCAN_API_KEY}", url = "https://api.mantlescan.xyz/api"
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
+fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
