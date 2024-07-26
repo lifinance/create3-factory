@@ -35,6 +35,7 @@ mantle = "${RPC_URL_MANTLE}"
 blast = "${RPC_URL_BLAST}"
 rootstock = "${RPC_URL_ROOTSTOCK}"
 sei = "${RPC_URL_SEI}"
+gravity = "${RPC_URL_GRAVITY}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -67,6 +68,7 @@ blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
+gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/api", verifier = "blockscout", chain = 1625}
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
