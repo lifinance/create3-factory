@@ -36,6 +36,7 @@ blast = "${RPC_URL_BLAST}"
 rootstock = "${RPC_URL_ROOTSTOCK}"
 sei = "${RPC_URL_SEI}"
 gravity = "${RPC_URL_GRAVITY}"
+immutablezkevm = "${RPC_URL_IMMUTABLEZKEVM}"
 
 # testnets
 goerli = "${RPC_URL_GOERLI}"
@@ -69,6 +70,7 @@ rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
 gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/api", verifier = "blockscout", chain = 1625}
+immutablezkevm = { key = "${IMMUTABLEZKEVM_API_KEY}", url = "https://explorer.immutable.com", verifier = "blockscout", chain = 13371}
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
