@@ -1,9 +1,17 @@
 #!/bin/bash
 
+# load env variables
+source .env
+
 deploy() {
 	NETWORK=$1
 
-	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --silent --broadcast --verify --legacy)
+	# get deployer address
+	DEPLOYER_ADDRESS=$(cast wallet address "$PRIVATE_KEY")
+	echo "You are deploying from address: $DEPLOYER_ADDRESS"
+
+	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --verify --legacy --silent --broadcast)
+	# RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --silent --verify --verifier "blockscout" --verifier-url "https://explorer.immutable.com/api" --broadcast)
 	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2>/dev/null)
 
 	factory=$(echo $RETURN_DATA | jq -r '.factory.value')

@@ -24,34 +24,46 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 ### Mainnets
 
 - Ethereum
-- Polygon
-- Binance Smart Chain
-- Gnosis
-- Fantom
-- OKXChain
-- Avalanche C-Chain
 - Arbitrum
 - Arbitrum Nova
-- Optimism
-- Moonriver
-- Moonbeam
-- CELO
-- FUSE
-- CRONOS
-- Velas
-- Harmony Shard 0
-- EVMOS
 - Aurora
-- Boba
+- Avalanche C-Chain
 - Base
+- Blast
+- Binance Smart Chain
+- Boba
+- Celo
+- Cronos
+- Evmos
+- Fantom
+- Fraxtal
+- Fuse
+- Gnosis
+- Gravity
+- Harmony Shard 0
+- Immutable zkEVM
+- Linea
+- Mantle
+- Metis
+- Moonbeam
+- Moonriver
+- OKXChain
+- OpBNB
+- Optimism
+- Polygon
+- Rootstock
+- Sei
+- Velas
+- zkEVM
 
 ### Testnets
 
-- Goerli
-- Sepolia
-- Mumbai
 - Arbitrum Goerli
+- Binance Smart Chain Testnet
 - ConsenSys zkEVM Testnet
+- Goerli
+- Mumbai
+- Sepolia
 
 ## Usage
 
