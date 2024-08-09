@@ -53,6 +53,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - Polygon
 - Rootstock
 - Sei
+- Taiko
 - Velas
 - zkEVM
 
