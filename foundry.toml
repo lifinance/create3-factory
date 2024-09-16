@@ -48,6 +48,7 @@ arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
 bsc-testnet = "${RPC_URL_BSC_TESTNET}"
 scroll-alpha = "${RPC_URL_SCROLL_ALPHA}"
+beratest = "${RPC_URL_BERATEST}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_KEY}" }
@@ -81,5 +82,7 @@ goerli = { key = "${ETHERSCAN_KEY}" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
 arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+beratest = { key = "${BERATEST_API_KEY}", url = "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api", chain = "80084" }
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
 #
