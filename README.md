@@ -56,6 +56,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - Sei
 - Taiko
 - Velas
+- XLayer
 - zkEVM
 
 ### Testnets
@@ -66,6 +67,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - Goerli
 - Mumbai
 - Sepolia
+- Berachain Testnet
 
 ## Usage
 
