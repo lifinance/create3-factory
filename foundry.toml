@@ -38,6 +38,7 @@ sei = "${RPC_URL_SEI}"
 taiko = "${RPC_URL_TAIKO}"
 velas = "${RPC_URL_VELAS}"
 xlayer = "${RPC_URL_XLAYER}"
+worldchain = "${RPC_URL_WORLDCHAIN}"
 zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
 
@@ -77,6 +78,7 @@ rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
 taiko = { key = "${TAIKO_API_KEY}", url = "https://api.taikoscan.io/api" }
+worldchain = { key = "${WORLDCHAIN_API_KEY}", url = "https://api.worldscan.org/api" }
 xlayer = { key = "${XLAYER_API_KEY}", url = "https://www.oklink.com/api/v5/explorer/xlayer/api", chain = 196 }
 
 #testnets
