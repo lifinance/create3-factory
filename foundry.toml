@@ -22,6 +22,7 @@ gravity = "${RPC_URL_GRAVITY}"
 immutablezkevm = "${RPC_URL_IMMUTABLEZKEVM}"
 kaia = "${RPC_URL_KAIA}"
 linea = "${RPC_URL_LINEA}"
+lisk = "${RPC_URL_LISK}"
 mantle = "${RPC_URL_MANTLE}"
 metis = "${RPC_URL_METIS}"
 mode = "${RPC_URL_MODE}"
@@ -66,6 +67,7 @@ gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/
 immutablezkevm = { key = "${IMMUTABLEZKEVM_API_KEY}", url = "https://explorer.immutable.com/api", verifier = "blockscout", chain = 13371}
 kaia = { key = "${KAIA_API_KEY}", url = "https://kaiascope.com/api", verifier = "blockscout", chain = 8217 }
 linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api" }
+lisk = { key = "${LISK_API_KEY}", url = "https://blockscout.lisk.com/api", chain = 1135, verifier = "blockscout" }
 mantle = { key = "${MANTLESCAN_API_KEY}", url = "https://api.mantlescan.xyz/api" }
 metis = { key = "${METISSCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan" }
 mode = { key = "${MODESCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan" }
