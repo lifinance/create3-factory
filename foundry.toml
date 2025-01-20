@@ -3,6 +3,7 @@ optimizer_runs = 1000000
 
 [rpc_endpoints]
 mainnet = "${RPC_URL_MAINNET}"
+apechain = "${RPC_URL_APECHAIN}"
 arbitrum = "${RPC_URL_ARBITRUM}"
 aurora = "${RPC_URL_AURORA}"
 avalanche = "${RPC_URL_AVALANCHE}"
@@ -56,6 +57,7 @@ beratest = "${RPC_URL_BERATEST}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_KEY}" }
+apechain = { key = "${APECHAIN_KEY}", url = "https://apechain.calderaexplorer.xyz/api", verifier = "blockscout", chain = 33139 }
 arbitrum = { key = "${ARBISCAN_KEY}", url = "https://api.arbiscan.io/api" }
 avalanche = { key = "${SNOWTRACE_KEY}", url = "https://api.snowtrace.io/api" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
