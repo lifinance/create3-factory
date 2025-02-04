@@ -8,6 +8,7 @@ arbitrum = "${RPC_URL_ARBITRUM}"
 aurora = "${RPC_URL_AURORA}"
 avalanche = "${RPC_URL_AVALANCHE}"
 base = "${RPC_URL_BASE}"
+berachain = "${ETH_NODE_URI_BERACHAIN}"
 blast = "${RPC_URL_BLAST}"
 boba = "${RPC_URL_BOBA}"
 bsc = "${RPC_URL_BSC}"
@@ -61,6 +62,7 @@ apechain = { key = "${APECHAIN_KEY}", url = "https://apechain.calderaexplorer.xy
 arbitrum = { key = "${ARBISCAN_KEY}", url = "https://api.arbiscan.io/api" }
 avalanche = { key = "${SNOWTRACE_KEY}", url = "https://api.snowtrace.io/api" }
 base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
+berachain = { key = "${BERACHAIN_ETHERSCAN_API_KEY}", url = "https://80094.routescan.io/api", chain = 80094 }
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 bsc = { key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api" }
 gnosis = { key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/api" }
