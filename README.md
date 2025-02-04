@@ -29,6 +29,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 - Aurora
 - Avalanche C-Chain
 - Base
+- Berachain
 - Blast
 - Binance Smart Chain
 - Boba
