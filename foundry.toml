@@ -47,8 +47,10 @@ zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
 
 # testnets
+fuji = "${RPC_URL_FUJI}"
 goerli = "${RPC_URL_GOERLI}"
 sepolia = "${RPC_URL_SEPOLIA}"
+optimism-sepolia = "${RPC_URL_OPTIMISM_SEPOLIA}"
 mumbai = "${RPC_URL_MUMBAI}"
 arbitrum-goerli = "${RPC_URL_ARBITRUM_GOERLI}"
 consensys-zkevm-testnet = "${RPC_URL_CONSENSYS_ZKEVM_TESTNET}"
@@ -91,9 +93,11 @@ xlayer = { key = "${XLAYER_API_KEY}", url = "https://www.oklink.com/api/v5/explo
 
 #testnets
 goerli = { key = "${ETHERSCAN_KEY}" }
+fuji = { key = "${FUJI_SNOWTRACE_KEY}", url = "https://subnets-test.avax.network/c-chain" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 mumbai = { key = "${POLYGONSCAN_KEY}", url = "https://api-testnet.polygonscan.com/api" }
 arbitrum-goerli = { key = "${ARBISCAN_KEY}", url = "https://api-goerli.arbiscan.io/api" }
+optimism-sepolia = { key = "${OPTIMISM_SEPOLIA_ETHERSCAN_KEY}", url = "https://api-optimistic.etherscan.io/api" }
 beratest = { key = "${BERATEST_API_KEY}", url = "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api", chain = "80084" }
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
