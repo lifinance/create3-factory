@@ -10,7 +10,7 @@ deploy() {
 	DEPLOYER_ADDRESS=$(cast wallet address "$PRIVATE_KEY")
 	echo "You are deploying from address: $DEPLOYER_ADDRESS (should be 0x11F11121DF7256C40339393b0FB045321022ce44 for 0x123 diamond address)"
 
-	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --legacy --broadcast --skip-simulation --gas-limit 2000000)
+	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --verify --legacy --broadcast --skip-simulation --gas-limit 2000000)
 	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2>/dev/null)
 
 	factory=$(echo $RETURN_DATA | jq -r '.factory.value')
