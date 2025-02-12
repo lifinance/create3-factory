@@ -19,56 +19,7 @@ LIFI Supports a large number of chains and we are only growing. CREATE3 allows u
 
 ## Deployments
 
-`CREATE3Factory` has been deployed to `0x93FEC2C00BfE902F733B57c5a6CeeD7CD1384AE1` on the following networks:
-
-### Mainnets
-
-- Ethereum
-- Arbitrum
-- Arbitrum Nova
-- Aurora
-- Avalanche C-Chain
-- Base
-- Berachain
-- Blast
-- Binance Smart Chain
-- Boba
-- Celo
-- Cronos
-- Evmos
-- Fantom
-- Fraxtal
-- Fuse
-- Gnosis
-- Gravity
-- Harmony Shard 0
-- Immutable zkEVM
-- Kaia
-- Linea
-- Mantle
-- Metis
-- Moonbeam
-- Moonriver
-- OKXChain
-- OpBNB
-- Optimism
-- Polygon
-- Rootstock
-- Sei
-- Taiko
-- Velas
-- XLayer
-- zkEVM
-
-### Testnets
-
-- Arbitrum Goerli
-- Binance Smart Chain Testnet
-- ConsenSys zkEVM Testnet
-- Goerli
-- Mumbai
-- Sepolia
-- Berachain Testnet
+For a list of all deployments and their respective addresses of the `CREATE3Factory` please check folder deployments/
 
 ## Usage
 
