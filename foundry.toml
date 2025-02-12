@@ -42,6 +42,7 @@ sei = "${RPC_URL_SEI}"
 taiko = "${RPC_URL_TAIKO}"
 velas = "${RPC_URL_VELAS}"
 xlayer = "${RPC_URL_XLAYER}"
+unichain = "${RPC_URL_UNICHAIN}"
 worldchain = "${RPC_URL_WORLDCHAIN}"
 zksync = "${RPC_URL_ZKSYNC}"
 zkevm = "${RPC_URL_ZKEVM}"
@@ -86,6 +87,7 @@ scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api"
 sonic = { key = "${SONICSCAN_API_KEY}", url = "https://api.sonicscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
 taiko = { key = "${TAIKO_API_KEY}", url = "https://api.taikoscan.io/api" }
+unichain = { key = "${UNICHAIN_API_KEY}", url = "https://unichain.blockscout.com/?", chain = 130 , verifier = "blockscout" }
 worldchain = { key = "${WORLDCHAIN_API_KEY}", url = "https://api.worldscan.org/api" }
 xlayer = { key = "${XLAYER_API_KEY}", url = "https://www.oklink.com/api/v5/explorer/xlayer/api", chain = 196 }
 
