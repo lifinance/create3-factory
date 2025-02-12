@@ -14,12 +14,10 @@ deploy() {
 	RPC_KEY="RPC_URL_$(tr '[:lower:]' '[:upper:]' <<<"$NETWORK")"
 	BALANCE=$(cast balance "$DEPLOYER_ADDRESS" --rpc-url "${!RPC_KEY}")
 
-	echo "UNICHAIN_API_KEY: ${UNICHAIN_API_KEY}"
-
 	# return formatted balance
 	echo "Deployer Wallet balance: $(echo "scale=10;$BALANCE / 1000000000000000000" | bc)"
 
-	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --verify --legacy --broadcast --skip-simulation --gas-limit 2000000)
+	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --legacy --broadcast --skip-simulation --gas-limit 2000000)
 	RETURN_CODE=$?
 	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2>/dev/null)
 	echo ""
