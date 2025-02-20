@@ -1,5 +1,7 @@
 [profile.default]
-optimizer_runs = 1000000
+optimizer_runs = 30
+solc_version = '0.8.28'
+evm_version = 'cancun'
 
 [rpc_endpoints]
 mainnet = "${RPC_URL_MAINNET}"
@@ -22,6 +24,7 @@ harmony = "${RPC_URL_HARMONY}"
 gnosis = "${RPC_URL_GNOSIS}"
 gravity = "${RPC_URL_GRAVITY}"
 immutablezkevm = "${RPC_URL_IMMUTABLEZKEVM}"
+ink = "${RPC_URL_INK}"
 kaia = "${RPC_URL_KAIA}"
 linea = "${RPC_URL_LINEA}"
 lisk = "${RPC_URL_LISK}"
@@ -72,6 +75,7 @@ fantom = { key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
 gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/api", verifier = "blockscout", chain = 1625}
 immutablezkevm = { key = "${IMMUTABLEZKEVM_API_KEY}", url = "https://explorer.immutable.com/api", verifier = "blockscout", chain = 13371}
+ink = { key = "${INK_API_KEY}", url = "https://explorer.inkonchain.com/api/", verifier = "blockscout", chain = 57073}
 kaia = { key = "${KAIA_API_KEY}", url = "https://kaiascope.com/api", verifier = "blockscout", chain = 8217 }
 linea = { key = "${LINEASCAN_API_KEY}", url = "https://api.lineascan.build/api" }
 lisk = { key = "${LISK_API_KEY}", url = "https://blockscout.lisk.com/api", chain = 1135, verifier = "blockscout" }
