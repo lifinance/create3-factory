@@ -21,6 +21,7 @@ fantom = "${RPC_URL_FANTOM}"
 fraxtal = "${RPC_URL_FRAXTAL}"
 fuse = "${RPC_URL_FUSE}"
 harmony = "${RPC_URL_HARMONY}"
+hyperevm = "${RPC_URL_HYPEREVM}"
 gnosis = "${RPC_URL_GNOSIS}"
 gravity = "${RPC_URL_GRAVITY}"
 immutablezkevm = "${RPC_URL_IMMUTABLEZKEVM}"
@@ -74,6 +75,7 @@ gnosis = { key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/a
 fantom = { key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
 gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/api", verifier = "blockscout", chain = 1625}
+hyperevm = { key = "${HYPEREVM_API_KEY}", url = "https://hyperliquid.cloud.blockscout.com/api", verifier = "blockscout", chain = 999}
 immutablezkevm = { key = "${IMMUTABLEZKEVM_API_KEY}", url = "https://explorer.immutable.com/api", verifier = "blockscout", chain = 13371}
 ink = { key = "${INK_API_KEY}", url = "https://explorer.inkonchain.com/api/", verifier = "blockscout", chain = 57073}
 kaia = { key = "${KAIA_API_KEY}", url = "https://kaiascope.com/api", verifier = "blockscout", chain = 8217 }

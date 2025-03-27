@@ -21,7 +21,7 @@ deploy() {
 	echo "      If you cannot fix it, remove the --verify flag and verify the contract manually afterwards. This needs to be fixed."
 	# Ticket for this issue:  https://lifi.atlassian.net/browse/LF-12359
 
-	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --verify --legacy --broadcast --skip-simulation --gas-limit 2000000)
+	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --legacy --broadcast --skip-simulation --gas-limit 2000000)
 	RETURN_CODE=$?
 	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2>/dev/null)
 	echo ""
