@@ -17,8 +17,10 @@ deploy() {
 	# return formatted balance
 	echo "Deployer Wallet balance: $(echo "scale=10;$BALANCE / 1000000000000000000" | bc)"
 	
+	echo "" 
 	echo "@DEV: You may run into an error about verification (missing Etherscan key for chainId ... or other errors)." 
 	echo "      If you cannot fix it, remove the --verify flag and verify the contract manually afterwards. This needs to be fixed."
+	echo "" 
 	# Ticket for this issue:  https://lifi.atlassian.net/browse/LF-12359
 
 	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --legacy --broadcast --skip-simulation --gas-limit 2000000)
@@ -32,11 +34,23 @@ deploy() {
 		exit 1
 	fi
 
-	factory=$(echo $RETURN_DATA | jq -r '.factory.value')
+	FACTORY_ADDRESS=$(echo $RETURN_DATA | jq -r '.factory.value')
+	echo "✅ Successfully deployed to address $FACTORY_ADDRESS"
 
-	saveContract $NETWORK CREATE3Factory $factory
+	# verify contract
+	API_KEY="$(tr '[:lower:]' '[:upper:]' <<<$NETWORK)_API_KEY"
+	API_KEY="${!API_KEY}"
+	echo ""
+	# not working as intended, we need to fix this
+	# echo "Trying to verify contract now with API key: $API_KEY"
+	# forge verify-contract "$FACTORY_ADDRESS" src/CREATE3Factory.sol:CREATE3Factory --watch --etherscan-api-key "$API_KEY" --chain "$NETWORK"
+	echo ""
 
-	echo "✅ Successfully deployed to address $factory"
+	echo ""
+	echo "Creating deploy log"
+	saveContract $NETWORK CREATE3Factory $FACTORY_ADDRESS
+
+	echo "✅ Deployment successfully completed"
 }
 
 saveContract() {

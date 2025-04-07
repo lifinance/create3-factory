@@ -42,8 +42,9 @@ polygon = "${RPC_URL_POLYGON}"
 rootstock = "${RPC_URL_ROOTSTOCK}"
 scroll = "${RPC_URL_SCROLL}"
 soneium = "${RPC_URL_SONEIUM}"
-sonic = "${RPC_URL_SONIC}"
 sei = "${RPC_URL_SEI}"
+sonic = "${RPC_URL_SONIC}"
+swellchain = "${RPC_URL_SWELLCHAIN}"
 taiko = "${RPC_URL_TAIKO}"
 velas = "${RPC_URL_VELAS}"
 xlayer = "${RPC_URL_XLAYER}"
@@ -92,8 +93,9 @@ polygon = { key = "${POLYGONSCAN_KEY}", url = "https://api.polygonscan.com/api" 
 rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
 soneium = { key = "${SONEIUM_API_KEY}", url = "https://soneium.blockscout.com/api?", verifier = "blockscout", chain = 1868 }
-sonic = { key = "${SONICSCAN_API_KEY}", url = "https://api.sonicscan.com/api" }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
+sonic = { key = "${SONICSCAN_API_KEY}", url = "https://api.sonicscan.com/api" }
+swellchain = { key = "${SWELLCHAIN_API_KEY}", url = "https://api.swellchainscan.io/api", chain = 1923 }
 taiko = { key = "${TAIKO_API_KEY}", url = "https://api.taikoscan.io/api" }
 unichain = { key = "${UNICHAIN_API_KEY}", url = "https://unichain.blockscout.com/?", chain = 130 , verifier = "blockscout" }
 worldchain = { key = "${WORLDCHAIN_API_KEY}", url = "https://api.worldscan.org/api" }
