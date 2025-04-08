@@ -15,6 +15,7 @@ blast = "${RPC_URL_BLAST}"
 boba = "${RPC_URL_BOBA}"
 bsc = "${RPC_URL_BSC}"
 celo = "${RPC_URL_CELO}"
+corn = "${RPC_URL_CORN}"
 cronos = "${RPC_URL_CRONOS}"
 evmos = "${RPC_URL_EVMOS}"
 fantom = "${RPC_URL_FANTOM}"
@@ -73,6 +74,7 @@ base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
 berachain = { key = "${BERACHAIN_ETHERSCAN_API_KEY}", url = "https://api.berascan.com/api" }
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 bsc = { key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api" }
+corn = { key = "${CORNSCAN_API_KEY}", url = "https://cornscan.io" }
 etherlink = { key = "${ETHERLINK_API_KEY}", url = "https://explorer.etherlink.com/api", verifier = "blockscout", chain = 42793}
 fantom = { key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
