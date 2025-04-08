@@ -25,8 +25,12 @@ deploy() {
 
 	RAW_RETURN_DATA=$(forge script script/Deploy.s.sol -f $NETWORK -vvvv --json --legacy --broadcast --skip-simulation --gas-limit 2000000)
 	RETURN_CODE=$?
-	RETURN_DATA=$(echo $RAW_RETURN_DATA | jq -r '.returns' 2>/dev/null)
+	echo "RAW_RETURN_DATA: $RAW_RETURN_DATA"
+	CLEAN_RETURN_DATA=$(echo $RAW_RETURN_DATA | sed 's/^.*{\"logs/{\"logs/')
+	echo "RAW_RETURN_DATA: $RAW_RETURN_DATA"
+	RETURN_DATA=$(echo $CLEAN_RETURN_DATA | jq -r '.returns' 2>/dev/null)
 	echo ""
+	echo "RETURN_DATA: $RETURN_DATA"
 	echo ""
 
 	if [[ $RETURN_CODE -ne 0 ]]; then

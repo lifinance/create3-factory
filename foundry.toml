@@ -1,7 +1,7 @@
 [profile.default]
 optimizer_runs = 30
 solc_version = '0.8.28'
-evm_version = 'cancun'
+evm_version = 'london'
 
 [rpc_endpoints]
 mainnet = "${RPC_URL_MAINNET}"
@@ -24,6 +24,7 @@ harmony = "${RPC_URL_HARMONY}"
 hyperevm = "${RPC_URL_HYPEREVM}"
 gnosis = "${RPC_URL_GNOSIS}"
 gravity = "${RPC_URL_GRAVITY}"
+etherlink = "${RPC_URL_ETHERLINK}"
 immutablezkevm = "${RPC_URL_IMMUTABLEZKEVM}"
 ink = "${RPC_URL_INK}"
 kaia = "${RPC_URL_KAIA}"
@@ -72,9 +73,10 @@ base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
 berachain = { key = "${BERACHAIN_ETHERSCAN_API_KEY}", url = "https://api.berascan.com/api" }
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 bsc = { key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api" }
-gnosis = { key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/api" }
+etherlink = { key = "${ETHERLINK_API_KEY}", url = "https://explorer.etherlink.com/api", verifier = "blockscout", chain = 42793}
 fantom = { key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
+gnosis = { key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/api" }
 gravity = { key = "${GRAVITYSCAN_API_KEY}", url = "https://explorer.gravity.xyz/api", verifier = "blockscout", chain = 1625}
 hyperevm = { key = "${HYPEREVM_API_KEY}", url = "https://hyperliquid.cloud.blockscout.com/api", verifier = "blockscout", chain = 999}
 immutablezkevm = { key = "${IMMUTABLEZKEVM_API_KEY}", url = "https://explorer.immutable.com/api", verifier = "blockscout", chain = 13371}
