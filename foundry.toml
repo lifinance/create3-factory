@@ -1,7 +1,7 @@
 [profile.default]
 optimizer_runs = 30
 solc_version = '0.8.28'
-evm_version = 'london'
+evm_version = 'cancun'
 
 [rpc_endpoints]
 mainnet = "${RPC_URL_MAINNET}"
