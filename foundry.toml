@@ -43,10 +43,11 @@ optimism = "${RPC_URL_OPTIMISM}"
 polygon = "${RPC_URL_POLYGON}"
 rootstock = "${RPC_URL_ROOTSTOCK}"
 scroll = "${RPC_URL_SCROLL}"
-soneium = "${RPC_URL_SONEIUM}"
 sei = "${RPC_URL_SEI}"
+soneium = "${RPC_URL_SONEIUM}"
 sonic = "${RPC_URL_SONIC}"
 swellchain = "${RPC_URL_SWELLCHAIN}"
+superposition = "${RPC_URL_SUPERPOSITION}"
 taiko = "${RPC_URL_TAIKO}"
 velas = "${RPC_URL_VELAS}"
 xlayer = "${RPC_URL_XLAYER}"
@@ -74,7 +75,7 @@ base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
 berachain = { key = "${BERACHAIN_ETHERSCAN_API_KEY}", url = "https://api.berascan.com/api" }
 blast = { key = "${BLASTSCAN_API_KEY}", url = "https://api.blastscan.org/api" }
 bsc = { key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api" }
-corn = { key = "${CORNSCAN_API_KEY}", url = "https://cornscan.io" }
+corn = { key = "${CORNSCAN_API_KEY}", url = "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan" }
 etherlink = { key = "${ETHERLINK_API_KEY}", url = "https://explorer.etherlink.com/api", verifier = "blockscout", chain = 42793}
 fantom = { key = "${FTMSCAN_KEY}", url = "https://api.ftmscan.com/api" }
 fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "https://api.fraxscan.com/api" }
@@ -96,10 +97,11 @@ optimism = { key = "${OPTIMISM_ETHERSCAN_KEY}", url = "https://api-optimistic.et
 polygon = { key = "${POLYGONSCAN_KEY}", url = "https://api.polygonscan.com/api" }
 rootstock = { key = "${RSKSCAN_API_KEY}", url = "https://api.rskscan.com/api" }
 scroll = { key = "${SCROLLSCAN_API_KEY}", url = "https://api.scrollscan.com/api" }
-soneium = { key = "${SONEIUM_API_KEY}", url = "https://soneium.blockscout.com/api?", verifier = "blockscout", chain = 1868 }
 sei = { key = "${SEISCAN_API_KEY}", url = "https://api.seitrace.com/api" }
+soneium = { key = "${SONEIUM_API_KEY}", url = "https://soneium.blockscout.com/api?", verifier = "blockscout", chain = 1868 }
 sonic = { key = "${SONICSCAN_API_KEY}", url = "https://api.sonicscan.com/api" }
 swellchain = { key = "${SWELLCHAIN_API_KEY}", url = "https://api.swellchainscan.io/api", chain = 1923 }
+superposition = { key = "${SUPERPOSITION_API_KEY}", url = "https://explorer.superposition.so/api", chain = 55244, verifier = "blockscout" }
 taiko = { key = "${TAIKO_API_KEY}", url = "https://api.taikoscan.io/api" }
 unichain = { key = "${UNICHAIN_API_KEY}", url = "https://unichain.blockscout.com/?", chain = 130 , verifier = "blockscout" }
 worldchain = { key = "${WORLDCHAIN_API_KEY}", url = "https://api.worldscan.org/api" }
