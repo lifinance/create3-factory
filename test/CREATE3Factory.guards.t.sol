@@ -88,6 +88,35 @@ contract CREATE3FactoryGuardsTest is Test {
         assertEq(predicted.code.length, 0);
     }
 
+    function test_ValueOnNonPayableInitRevertsAndSaltStaysFree() public {
+        bytes32 salt = keccak256("value");
+        vm.deal(address(this), 1 ether);
+        uint256 balanceBefore = address(this).balance;
+
+        _expectRevert("INITIALIZATION_FAILED");
+        factory.deploy{value: 1 ether}(salt, type(RejectsValue).creationCode);
+
+        assertEq(address(this).balance, balanceBefore);
+        assertEq(factory.getDeployed(address(this), salt).code.length, 0);
+
+        address deployed = factory.deploy(salt, type(Dummy).creationCode);
+        assertEq(deployed, factory.getDeployed(address(this), salt));
+        assertGt(deployed.code.length, 0);
+    }
+
+    function test_PayableDeployForwardsValueAndMatchesGetDeployed() public {
+        bytes32 salt = keccak256("paid");
+        vm.deal(address(this), 1 ether);
+
+        address predicted = factory.getDeployed(address(this), salt);
+        address deployed = factory.deploy{value: 1 ether}(salt, type(AcceptsValue).creationCode);
+
+        assertEq(deployed, predicted);
+        assertEq(deployed.balance, 1 ether);
+        assertEq(address(this).balance, 0);
+        assertEq(AcceptsValue(deployed).funded(), 1 ether);
+    }
+
     function test_SameSaltDifferentDeployerSucceeds() public {
         bytes32 salt = keccak256("namespace");
         address first = factory.deploy(salt, type(Dummy).creationCode);
@@ -129,5 +158,17 @@ contract Dummy {
 contract Reverting {
     constructor() {
         revert();
+    }
+}
+
+contract RejectsValue {
+    constructor() {}
+}
+
+contract AcceptsValue {
+    constructor() payable {}
+
+    function funded() external view returns (uint256) {
+        return address(this).balance;
     }
 }
