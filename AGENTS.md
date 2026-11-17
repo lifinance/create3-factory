@@ -38,8 +38,10 @@ CI (`test.yml`) runs build and test on `workflow_dispatch` only, not on pull req
 ## Config and env
 
 - Copy `.env.example` to `.env` (gitignored). `deploy/deploy.sh` sources it.
-- `PRIVATE_KEY` is the deployer key. The script expects the deployer `0x11F11121DF7256C40339393b0FB045321022ce44`
-  so the factory lands on the shared LI.FI address; a different key gives a different factory address.
+- `PRIVATE_KEY` is the deployer key. The factory is deployed with plain `CREATE`, so its address depends on
+  the deployer and its nonce: the shared LI.FI address needs deployer `0x11F11121DF7256C40339393b0FB045321022ce44`
+  at nonce 0 on the target chain. Check the nonce and `deployments/` before deploying or retrying; any earlier
+  transaction from that account gives a different factory address.
 - `RPC_URL_<NETWORK>` (upper case network name) and the explorer key per network are read through
   `foundry.toml`. `.env.example` lists only some of them; add the ones for the network you deploy to.
 
